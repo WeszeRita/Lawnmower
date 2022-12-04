@@ -1,20 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lawnmower</title>
-    <link rel="stylesheet" href="./css/index.css" type="text/css">
-    <script src="./js/index.js" defer></script>
-  </head>
-  <canvas id="canvas"></canvas>
-  <body>
-    <div class="garden">
-      <img id="ground" src="img/ground.png" />
-      <img id="stone" src="img/stone.png" />
-      <img id="grass" src="img/grass.png" />
-      <img id="lownmower" src="img/lownmowerWithGrass.png" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lawnmower</title>
+  <link rel="stylesheet" href="./css/index.css" type="text/css">
+  <script src="./js/index.js" defer></script>
+</head>
+
+<body>
+  <div class="garden">
+    <canvas id="canvas"></canvas>
+    <div class="pictures">
+      <figure>
+        <img src="img/ground.png" alt="ground" id="ground" class="img">
+        <figcaption>ground</figcaption>
+      </figure>
+
+      <figure>
+        <img src="img/grass.png" alt="grass" id="grass" class="img">
+        <figcaption>grass</figcaption>
+      </figure>
+
+      <figure>
+        <img src="img/lawnmower.png" alt="lawnmower" id="lownmower" class="img">
+        <figcaption>mower</figcaption>
+      </figure>
+
     </div>
-    
-  </body>
+
+  </div>
+
+</body>
+
 </html>
