@@ -2,6 +2,12 @@ body {
     background-color: #eee;
 }
 
+h1 {
+    text-align: center;
+    color: rgb(157, 188, 117);
+    font-size: 3rem;
+}
+
 #canvas {
     border: 5px solid rgb(157, 188, 117);
     
@@ -9,6 +15,8 @@ body {
 
 .garden {
     width: fit-content;
+    margin: auto;
+    margin-top: 2rem;
 }
 
 .pictures {
