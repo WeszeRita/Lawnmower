@@ -26,25 +26,25 @@ class LawnMower {
     }
   
     move() {
-      ctx.drawImage(ground, this.currentX, this.currentY);
+      ctx.drawImage(ground, this.currentX * config.image.size, this.currentY * config.image.size);
       this.currentX = this.nextX;
       this.currentY = this.nextY;
-      ctx.drawImage(lownmower, this.currentX, this.currentY);
+      ctx.drawImage(lownmower, this.currentX * config.image.size, this.currentY * config.image.size);
     }
   
     calculateNextMove() {
       this.orientation = this.calculateNextOrientation();
       if (this.orientation === Directions.DOWN) {
         this.nextX = this.currentX;
-        this.nextY += config.image.size;
+        this.nextY++;
       } else if (this.orientation === Directions.UP) {
         this.nextX = this.currentX;
-        this.nextY -= config.image.size;
+        this.nextY--;
       } else if (this.orientation === Directions.RIGHT) {
-        this.nextX += config.image.size;
+        this.nextX++;
         this.nextY = this.currentY;
       } else if (this.orientation === Directions.LEFT) {
-        this.nextX -= config.image.size;
+        this.nextX--;
         this.nextY = this.currentY;
       }
       if (!validation.isValidField(this.nextX, this.nextY)) {

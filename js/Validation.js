@@ -3,11 +3,11 @@ import config from "../config.js";
 class Validation {
 
     isValidField(x, y) {
-        return (x < config.canvas.columnCount * config.image.size) && (y < config.canvas.rowCount * config.image.size);
+        return (x < config.canvas.columnCount) && (y < config.canvas.rowCount);
     }
 
     isLastLine(y) {
-        return (y === (config.canvas.rowCount - 1) * config.image.size);
+        return (y === (config.canvas.rowCount - 1));
     }
 
     isFirstLine(y) {
@@ -15,7 +15,7 @@ class Validation {
     }
 
     isLastColumn(x) {
-        return (x === (config.canvas.columnCount - 1) * config.image.size);
+        return (x === (config.canvas.columnCount - 1));
     }
 }
 

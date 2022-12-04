@@ -1,6 +1,6 @@
 const config = {
     canvas: {
-      columnCount: 5, 
+      columnCount: 7, 
       rowCount: 5
     },
     image: {
