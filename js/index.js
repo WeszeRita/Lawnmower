@@ -5,7 +5,7 @@ import LawnMower from "./Lawnmower.js";
 let garden = new Garden();
 let lawnMower = new LawnMower();
 
-window.onload = () => {
+// window.onload = () => {
   garden.init();
 
   let interval = setInterval(startSimulation, 100);
@@ -19,7 +19,7 @@ window.onload = () => {
     }
   }
 
-};
+//};
 
 function startLawn() {
   lawnMower.calculateNextMove();

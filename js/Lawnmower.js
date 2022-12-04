@@ -28,19 +28,31 @@ class LawnMower {
 
     calculateNextMove() {
         this.orientation = this.calculateNextOrientation();
-        if (this.orientation === Directions.DOWN) {
-            this.nextX = this.currentX;
-            this.nextY++;
-        } else if (this.orientation === Directions.UP) {
-            this.nextX = this.currentX;
-            this.nextY--;
-        } else if (this.orientation === Directions.RIGHT) {
-            this.nextX++;
-            this.nextY = this.currentY;
-        } else if (this.orientation === Directions.LEFT) {
-            this.nextX--;
-            this.nextY = this.currentY;
+        this.updateNextPosition();
+    }
+
+    updateNextPosition() {
+        this.nextX = this.currentX;
+        this.nextY = this.currentY;
+
+        switch(this.orientation) {
+            case Directions.DOWN:
+                this.nextY++;
+                break;
+                
+            case Directions.UP:
+                this.nextY--;
+                break;
+                
+            case Directions.RIGHT:
+                this.nextX++;
+                break;
+                
+            case Directions.LEFT:
+                this.nextX--;
+                break;
         }
+     
         if (!validation.isValidField(this.nextX, this.nextY)) {
             this.nextX = this.currentX;
             this.nextY = this.currentY;
