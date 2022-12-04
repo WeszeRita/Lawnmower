@@ -3,6 +3,16 @@ body {
 }
 
 #canvas {
-    border: 1px solid black;
+    border: 5px solid rgb(157, 188, 117);
     
+}
+
+.garden {
+    width: fit-content;
+}
+
+.pictures {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
