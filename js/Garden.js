@@ -25,6 +25,10 @@ class Garden {
     draw(image, x, y) {
         ctx.drawImage(image, x * Config.image.size, y * Config.image.size);
     }
+
+    isGardenOneRower() {
+       return Config.canvas.rowCount === 1
+    }
 }
 
 export default Garden;

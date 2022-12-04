@@ -5,21 +5,18 @@ import LawnMower from "./Lawnmower.js";
 let garden = new Garden();
 let lawnMower = new LawnMower();
 
-// window.onload = () => {
-  garden.init();
+garden.init();
 
-  let interval = setInterval(startSimulation, 100);
-  let iteration = 0;
+let interval = setInterval(startSimulation, 100);
+let iteration = 0;
 
-  function startSimulation() {
-    startLawn();
-    iteration++;
-    if (iteration === Config.canvas.rowCount * Config.canvas.columnCount - 1) {
-      clearInterval(interval);
-    }
+function startSimulation() {
+  startLawn();
+  iteration++;
+  if (iteration === Config.canvas.rowCount * Config.canvas.columnCount - 1) {
+    clearInterval(interval);
   }
-
-//};
+}
 
 function startLawn() {
   lawnMower.calculateNextMove();
