@@ -1,11 +1,11 @@
-const config = {
+const Config = {
     canvas: {
-      columnCount: 7, 
-      rowCount: 5
+      columnCount: 5, 
+      rowCount: 7
     },
     image: {
         size: 50
     }
    };
  
-   export default config;
+   export default Config;
