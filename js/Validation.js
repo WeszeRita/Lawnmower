@@ -1,13 +1,13 @@
-import config from "../Config.js";
+import Config from "../Config.js";
 
 class Validation {
 
     isValidField(x, y) {
-        return (x < config.canvas.columnCount) && (y < config.canvas.rowCount);
+        return (x < Config.garden.columnCount) && (y < Config.garden.rowCount);
     }
 
     isLastLine(y) {
-        return (y === (config.canvas.rowCount - 1));
+        return (y === (Config.garden.rowCount - 1));
     }
 
     isFirstLine(y) {
@@ -15,7 +15,7 @@ class Validation {
     }
 
     isLastColumn(x) {
-        return (x === (config.canvas.columnCount - 1));
+        return (x === (Config.garden.columnCount - 1));
     }
 }
 

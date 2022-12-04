@@ -34,9 +34,6 @@ class LawnMower {
     }
 
     updateNextPosition() {
-        this.nextX = this.currentX;
-        this.nextY = this.currentY;
-
         switch (this.orientation) {
             case Directions.DOWN:
                 this.nextY++;

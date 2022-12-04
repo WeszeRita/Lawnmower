@@ -13,7 +13,7 @@ let iteration = 0;
 function startSimulation() {
   startLawn();
   iteration++;
-  if (iteration === Config.canvas.rowCount * Config.canvas.columnCount - 1) {
+  if (iteration === Config.garden.rowCount * Config.garden.columnCount - 1) {
     clearInterval(interval);
   }
 }

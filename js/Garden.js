@@ -3,13 +3,13 @@ import Config from "../Config.js";
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 const imageSize = 50;
-canvas.width = Config.canvas.columnCount * imageSize;
-canvas.height = Config.canvas.rowCount * imageSize;
+canvas.width = Config.garden.columnCount * imageSize;
+canvas.height = Config.garden.rowCount * imageSize;
 
 class Garden {
     init() {
-        for (let i = 0; i < Config.canvas.columnCount; i++) {
-            for (let j = 0; j < Config.canvas.rowCount; j++) {
+        for (let i = 0; i < Config.garden.columnCount; i++) {
+            for (let j = 0; j < Config.garden.rowCount; j++) {
                 this.draw(grass, i, j);
             }
         }
@@ -26,7 +26,7 @@ class Garden {
     }
 
     isGardenOneRower() {
-       return Config.canvas.rowCount === 1
+       return Config.garden.rowCount === 1
     }
 }
 
