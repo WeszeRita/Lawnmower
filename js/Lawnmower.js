@@ -1,7 +1,6 @@
 import Directions from "./Directions.js";
 import Validation from "./Validation.js";
 import Garden from "./Garden.js";
-import Config from "../Config.js";
 
 let validation = new Validation;
 let garden = new Garden;
@@ -42,15 +41,12 @@ class LawnMower {
             case Directions.DOWN:
                 this.nextY++;
                 break;
-
             case Directions.UP:
                 this.nextY--;
                 break;
-
             case Directions.RIGHT:
                 this.nextX++;
                 break;
-
             case Directions.LEFT:
                 this.nextX--;
                 break;
@@ -83,7 +79,6 @@ class LawnMower {
         }
         return Directions.NONE
     }
-
 
     calculateCornersCovered() {
         if (validation.isLastColumn(this.currentX)) {

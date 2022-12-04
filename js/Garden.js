@@ -2,12 +2,11 @@ import Config from "../Config.js";
 
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
-
-canvas.width = Config.canvas.columnCount * Config.image.size;
-canvas.height = Config.canvas.rowCount * Config.image.size;
+const imageSize = 50;
+canvas.width = Config.canvas.columnCount * imageSize;
+canvas.height = Config.canvas.rowCount * imageSize;
 
 class Garden {
-
     init() {
         for (let i = 0; i < Config.canvas.columnCount; i++) {
             for (let j = 0; j < Config.canvas.rowCount; j++) {
@@ -23,7 +22,7 @@ class Garden {
     }
 
     draw(image, x, y) {
-        ctx.drawImage(image, x * Config.image.size, y * Config.image.size);
+        ctx.drawImage(image, x * imageSize, y * imageSize);
     }
 
     isGardenOneRower() {
