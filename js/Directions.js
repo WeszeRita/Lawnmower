@@ -5,5 +5,5 @@ const Directions = {
     DOWN: 'down',
     NONE: 'none'
   };
-  
+
   export default Directions;

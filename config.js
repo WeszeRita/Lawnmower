@@ -1,7 +1,7 @@
 const Config = {
     garden: {
-      columnCount: 10, 
-      rowCount: 8
+      columnCount: 15,
+      rowCount: 10
     }
    };
  

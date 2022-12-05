@@ -20,6 +20,11 @@ class LawnMower {
         this.nextX = nextX;
         this.orientation = orientation;
         this.cornersCovered = cornersCovered;
+    }    
+
+    lawn() {
+        this.calculateNextMove();
+        this.move();
     }
 
     move() {

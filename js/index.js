@@ -19,6 +19,5 @@ function startSimulation() {
 }
 
 function startLawn() {
-  lawnMower.calculateNextMove();
-  lawnMower.move();
+  lawnMower.lawn();
 }
