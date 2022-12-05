@@ -1,6 +1,6 @@
 const Config = {
     garden: {
-      columnCount: 15,
+      columnCount: 2,
       rowCount: 10
     }
    };

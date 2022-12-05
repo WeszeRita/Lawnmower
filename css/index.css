@@ -9,13 +9,16 @@ h1 {
 }
 
 #canvas {
+    display: block;
+    margin: auto;
     border: 5px solid rgb(157, 188, 117);
     
 }
 
 .garden {
-    width: fit-content;
+    display: block;
     margin: auto;
+    width:fit-content;
     margin-top: 2rem;
 }
 
